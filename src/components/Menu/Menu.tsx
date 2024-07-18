@@ -2,7 +2,7 @@
     import { NavLink } from "react-router-dom";
     import styles from "../../app/styles/components/Menu.module.scss";
 
-    import ExtractionIcon from "../../app/assets/components/Menu/extraction.png";
+    import {Extraicon} from "../../ui/componentsIcons/ExtraiconIcon";
     import FriendsIcon from "../../app/assets/components/Menu/friends.png";
     import NetworkIcon from "../../app/assets/components/Menu/network.png";
     import StoreIcon from "../../app/assets/components/Menu/store.png";
@@ -15,7 +15,7 @@
             <li>
             <NavLink to={"/"}>
                 <div>
-                <img src={ExtractionIcon} alt="" />
+                <Extraicon className={styles.menuIcons}/>
                 <p>Extraction</p>
                 </div>
             </NavLink>
