@@ -7,3 +7,10 @@ body{
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color)   ;
 }
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+@import './components/Menu.module.scss'
