@@ -36,7 +36,7 @@ export const Layout: React.FC = () => {
       )} */}
        <div className='container'>
           <Header />
-          <div style={{height:"643px" , overflow:"auto"}}>
+          <div style={{height:"570px" , overflow:"auto"}}>
             <Outlet />
           </div>
           <Menu />
