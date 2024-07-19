@@ -1,0 +1,84 @@
+@mixin text($ff, $fs, $fw, $lh, $talign, $color, $ls) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  text-align: center;
+  color: $color;
+  letter-spacing: $ls;
+}
+.header {
+  padding: 7px 0 10px;
+  width: 100%;
+  &Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &Left {
+    padding: 3px 10px 4px 10px;
+    border-radius: 45px;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    h5 {
+      @include text(Inter, 14px, 500, 16.94px, center, #000, -1.5%);
+    }
+    .northEast {
+      position: absolute;
+      right: -10px;
+      top: -4.5px;
+      font-family: SF Pro Display;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 11.93px;
+      text-align: left;
+      border-radius: 23px;
+      padding: 2px 5px;
+      background: #fff;
+    }
+  }
+  &Right {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    .share {
+      padding: 6px;
+      background: #fff;
+      border-radius: 35px;
+      border-bottom: 2px solid #788aac33;
+      line-height: 50%;
+    }
+    .liters {
+      display: flex;
+      column-gap: 4.5px;
+      align-items: center;
+      padding: 6px 20px;
+      border-radius: 31px;
+      background: #fff;
+      p {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.94px;
+        text-align: left;
+        color: #006df0;
+      }
+      small {
+        font-family: Inter;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 9.68px;
+        text-align: left;
+        color: #00000080;
+      }
+    }
+    .points {
+      display: flex;
+      column-gap: 4.5px;
+      align-items: center;
+    }
+  }
+}

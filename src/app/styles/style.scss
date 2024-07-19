@@ -4,12 +4,13 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--tg-theme-bg-color);
+  background: #f7f9fb;
   color: var(--tg-theme-text-color);
   width: 375px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  border: 3px solid black;
 }
 ul li {
   list-style-type: none;

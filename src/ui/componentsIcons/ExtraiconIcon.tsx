@@ -1,5 +1,5 @@
 interface ExtraiconProps {
-  className?: string; // Опциональный className
+  className?: string;
 }
 export const Extraicon:React.FC<ExtraiconProps> = ({className}) => {
   return (

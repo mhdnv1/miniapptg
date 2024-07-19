@@ -10,6 +10,7 @@
     .menu {
         display: flex;
         column-gap: 28px;
+        justify-content: space-between;
         li {
             a {
                 text-decoration: none;
