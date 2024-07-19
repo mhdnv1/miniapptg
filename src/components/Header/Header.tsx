@@ -7,15 +7,7 @@ export const Header: React.FC = () => {
         <nav className={styles.headerNav}>
           <div className={styles.headerLeft}>
             <span>
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 16.62H16V0.62H0V16.62Z" fill="black" />
-              </svg>
+            🐋
             </span>
             <h5>Asti Ann</h5>
             <span className={styles.northEast}>
