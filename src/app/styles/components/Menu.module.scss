@@ -7,6 +7,10 @@
   color: $color;
 }
 .menuNav {
+    padding-bottom: 26px;
+    // position: fixed;
+    // width: 100%;
+    // left: 0;
     .menu {
         display: flex;
         column-gap: 28px;

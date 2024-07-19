@@ -6,9 +6,7 @@ export const Header: React.FC = () => {
       <div className="container">
         <nav className={styles.headerNav}>
           <div className={styles.headerLeft}>
-            <span>
-            🐋
-            </span>
+            <span>🐋</span>
             <h5>Asti Ann</h5>
             <span className={styles.northEast}>
               <svg
@@ -56,10 +54,10 @@ export const Header: React.FC = () => {
                   />
                 </svg>
               </span>
-              <>
+              <div>
                 <p>0.15</p>
                 <small>liters</small>
-              </>
+              </div>
             </div>
             <div className={styles.points}>
               <span>
@@ -75,7 +73,7 @@ export const Header: React.FC = () => {
                     fill="#EB5757"
                   />
                 </svg>
-                  </span>
+              </span>
               <div>
                 <p>3.2</p>
                 <small>points</small>
