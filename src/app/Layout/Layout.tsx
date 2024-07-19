@@ -27,13 +27,6 @@ export const Layout: React.FC = () => {
                 </div> 
             )
         }
-      <div>
-        <Header />
-        <div style={{minHeight:"600px"}} className="container">
-          <Outlet />
-        </div>
-        <Menu />
-      </div>
     </>
   );
 };
