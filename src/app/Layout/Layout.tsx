@@ -34,13 +34,15 @@ export const Layout: React.FC = () => {
           <p>Available on mobile</p>
         </div>
       )} */}
-       <div className='container'>
+       
           <Header />
-          <div style={{height:"570px" , overflow:"auto" , background:"#EAEDF2"}}>
+          <div className='container'>
+          <div style={{height:"490px" , overflow:"auto"}}>
             <Outlet />
           </div>
+          </div>
           <Menu />
-        </div>
+        
     </>
   );
 };

@@ -1,4 +1,3 @@
-// src/data/data.ts
 import Facebook from "../app/assets/components/TaskListCard/Facebook.png";
 import Telegram from "../app/assets/components/TaskListCard/Telegram.png";
 import Youtube from "../app/assets/components/TaskListCard/Youtube.png";
@@ -8,6 +7,12 @@ export interface SocialMedia {
   icon: string;
   title: string;
   bonus: number;
+}
+export interface FriendCardProps {
+  iconName:string,
+  huamnName:string,
+  bonus:number,
+  bonusFriend:number
 }
 
 export const initialData: SocialMedia[] = [
@@ -48,3 +53,25 @@ export const initialData: SocialMedia[] = [
     bonus: 1.50,
   },
 ];
+
+export const initialDataFriends:FriendCardProps[] = [
+  {
+    iconName:"🐟",
+    huamnName:"Granny Ann",
+    bonus:12.50,
+    bonusFriend:1.50
+  },
+  {
+    iconName:"🦈",
+    huamnName:"Carrie Ann",
+    bonus:12.20,
+    bonusFriend:0.50
+  },
+  {
+    iconName:"🐚",
+    huamnName:"Josh Mike",
+    bonus:5.60,
+    bonusFriend:0.50
+  },
+  
+] 

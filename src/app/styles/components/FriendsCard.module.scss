@@ -1,0 +1,70 @@
+.friendsCard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background: #F7F9FB;
+  &Left {
+    padding: 14px 10px;
+    border-radius: 45px;
+    background: #FFFFFF80;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    &Name {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+      span {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.94px;
+        letter-spacing: -0.015em;
+        text-align: center;
+        color: #000000;
+      }
+    }
+    &Bonus {
+      display: flex;
+      column-gap: 5px;
+      align-items: center;
+      span {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.94px;
+        letter-spacing: -0.015em;
+        text-align: left;
+        color: #eb5757;
+      }
+    }
+  }
+  &Right {
+    padding: 12px;
+    border-radius: 72px;
+    background:#FFFFFF80;
+    text-align: center;
+    font-size: 0;
+    p {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 14.52px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: #eb5757;
+    }
+    span {
+      font-family: Inter;
+      font-size: 8px;
+      font-weight: 400;
+      line-height: 9.68px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      color: #eb5757;
+    }
+  }
+}

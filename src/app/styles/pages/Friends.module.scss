@@ -1,8 +1,5 @@
 .friends {
     padding-top: 15px;
-  &Top {
-    width: 235px;
-    margin: 0 auto;
     h2 {
       font-family: "Inter";
       font-size: 14px;
@@ -13,6 +10,9 @@
       color: black;
       margin-bottom: 10px;
     }
+  &Top {
+    width: 235px;
+    margin: 0 auto;
   }
   &Total {
     width: 100%;
@@ -49,5 +49,10 @@
       text-align: center;
       color: #00000080;
     }
+  }
+  &Main{
+    padding-top: 40px;
+    // width: 235px;
+    // margin: 0 auto;
   }
 }
