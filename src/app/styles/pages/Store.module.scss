@@ -1,0 +1,121 @@
+.store {
+    &Btn{
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 14.52px;
+        text-align: left;
+        color: #006DF0;     
+        margin: 0 auto;   
+        display: block;
+        margin-top: 10px;
+        border: none;
+        background: transparent;
+        span{
+            padding: 3.5;
+            display: inline-block;
+            margin-right: 2px;
+        }
+    }
+  padding-top: 15px;
+  &Header {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+    button {
+      padding: 8px 20px;
+      background: white;
+      color: #00000080;
+      border: 1px solid white;
+      border-radius: 61px;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.94px;
+      letter-spacing: -0.015em;
+      text-align: left;
+      outline: 0;
+      cursor: pointer;
+      &:hover {
+        color: #006df0;
+        border: 1px solid #006df0;
+      }
+      &:active {
+        background-color: #0056b3;
+        transform: none;
+        box-shadow: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &Main {
+    padding: 40px 0;
+    font-size: 14px;
+    h2 {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.94px;
+      letter-spacing: -0.015em;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    &Cards {
+      display: flex;
+      justify-content: center;
+      column-gap: 5px;
+    }
+    &Card {
+      padding: 10px;
+      background: #ffffff80;
+      border-radius: 20px;
+      width: calc(50% - 5px);
+      &Header {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        column-gap: 25px;
+        .watch {
+          padding: 2px 5px;
+          background: #ffffff;
+          border: 1px solid #e2e5ec33;
+          border-radius: 5px;
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.52px;
+          color: #0000004d;
+        }
+      }
+      h3 {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.94px;
+        letter-spacing: -0.015em;
+        text-align: center;
+        color: #000000;
+        margin-top: 5px;
+      }
+      p {
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 12.1px;
+        text-align: center;
+        color: #00000080;
+      }
+    }
+  }
+  &Cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}

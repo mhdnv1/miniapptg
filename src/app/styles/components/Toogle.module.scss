@@ -1,0 +1,77 @@
+.toggleSwitch {
+    position: relative;
+    width: 36px;
+    display: inline-block;
+    text-align: left;
+    top: -2px;
+  }
+  
+  .toggleSwitchCheckbox {
+    display: none;
+  }
+  
+  .toggleSwitchLabel {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+  }
+  
+  .toggleSwitchInner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  
+  .toggleSwitchInner:before, .toggleSwitchInner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 20px;
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .toggleSwitchInner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #006DF0;
+    color: #FFFFFF;
+  }
+  
+  .toggleSwitchInner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #ddd;
+    color: #999;
+    text-align: right;
+  }
+  
+  .toggleSwitchSwitch {
+    display: block;
+    width: 18px;
+    margin: 3px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 16px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+  }
+  
+  .toggleSwitchCheckbox:checked + .toggleSwitchLabel .toggleSwitchInner {
+    margin-left: 0;
+  }
+  
+  .toggleSwitchCheckbox:checked + .toggleSwitchLabel .toggleSwitchSwitch {
+    right: 0px;
+  }
+  
