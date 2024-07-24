@@ -8,6 +8,11 @@ import three from '../app/assets/components/StoreCard/3.png'
 import four from '../app/assets/components/StoreCard/4.png'
 import five from '../app/assets/components/StoreCard/5.png'
 import six from '../app/assets/components/StoreCard/6.png'
+// market card
+import imageOneMarket from '../app/assets/components/Market/1.png'
+import imageOneOneMarket from '../app/assets/components/Market/1.1.png'
+import imageTwoMarket from '../app/assets/components/Market/2.png'
+import imageTwoTwoMarket from '../app/assets/components/Market/2.2.png'
 
 
 export interface SocialMedia {
@@ -29,6 +34,15 @@ interface StoreCardProps {
   title: string;
   volume: number;
   bonus: number | "Purchased";
+}
+
+interface MarketCardProps {
+  lvl: string;
+  image: string;
+  imageTwo: string;
+  title: string;
+  volume: number;
+  bonus: number | "upgrade to sell";
 }
 
 export const initialData: SocialMedia[] = [
@@ -131,6 +145,57 @@ export const initialStore:StoreCardProps[]=[
   {
     lvl:"6 lvl.",
     image:six,
+    title:"agaga",
+    volume:650,
+    bonus:9.99
+  },
+]
+
+export const initialMarket:MarketCardProps[]=[
+  {
+    lvl:"1 lvl.",
+    image:imageOneMarket,
+    imageTwo:imageOneOneMarket,
+    title:"Neighbour",
+    volume:250,
+    bonus:10.40
+  },
+  {
+    lvl:"2 lvl.",
+    image:imageTwoMarket,
+    imageTwo:imageTwoTwoMarket,
+    title:"Family",
+    volume:350,
+    bonus:'upgrade to sell'
+  },
+  {
+    lvl:"3 lvl.",
+    image:three,
+    imageTwo:"",
+    title:"Bottle",
+    volume:450,
+    bonus:5.50
+  },
+  {
+    lvl:"4 lvl.",
+    image:four,
+    imageTwo:"",
+    title:"Big bottle",
+    volume:650,
+    bonus:9.99
+  },
+  {
+    lvl:"5 lvl.",
+    image:five,
+    imageTwo:"",
+    title:"lalala",
+    volume:450,
+    bonus:5.50
+  },
+  {
+    lvl:"6 lvl.",
+    image:six,
+    imageTwo:"",
     title:"agaga",
     volume:650,
     bonus:9.99
