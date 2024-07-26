@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import style from "../../app/styles/pages/Store.module.scss";
 import { StoreBlock } from "../../components/Store";
 import { Market } from "../../components/Market";
@@ -6,7 +6,6 @@ import { Link, useLocation } from "react-router-dom";
 
 export const Store: React.FC = () => {
   const { pathname } = useLocation(); 
-
   console.log(pathname);
   
   return (

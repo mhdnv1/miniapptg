@@ -1,17 +1,41 @@
-import style from '../../app/styles/pages/Store.module.scss'
-import { ToogleSwitch } from '../ToogleSwitch';
-import { StoreCard } from '../StoreCard';
-import { initialStore } from '../../data/data';
+import { useState } from "react";
+import style from "../../app/styles/pages/Store.module.scss";
+import { ToogleSwitch } from "../ToogleSwitch";
+import { StoreCard } from "../StoreCard";
+import { initialStore } from "../../data/data";
+import { StoreModal } from "../../ui/Modal/StoreModal";
+import { StoreModalVolume } from "../../ui/Modal/StoreModalVolume";
 
-export const StoreBlock = () => {
+export const StoreBlock:React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [showStoreModalVolume, setShowStoreModalVolume] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleOpenStoreModalVolume = () => {
+    setShowStoreModalVolume(true);
+  };
+
+  const handleCloseStoreModalVolume = () => {
+    setShowStoreModalVolume(false);
+  };
+
   return (
-   <>
-            <div className={style.storeMain}>
+    <>
+      <div className={style.storeMain}>
         <h2>Enhancing water collection</h2>
         <div className={style.storeMainCards}>
           <div className={style.storeMainCard}>
             <div className={style.storeMainCardHeader}>
-              <span><ToogleSwitch/></span>
+              <span>
+                <ToogleSwitch />
+              </span>
               <span>
                 <svg
                   width="18"
@@ -30,7 +54,7 @@ export const StoreBlock = () => {
             </div>
             <h3>Auto-collector</h3>
             <p>500 ml in 8 hours</p>
-            <button className={style.storeBtn}>
+            <button onClick={handleOpenModal} className={style.storeBtn}>
               <span>
                 <svg
                   width="8"
@@ -45,8 +69,12 @@ export const StoreBlock = () => {
                   />
                 </svg>
               </span>
-              Level 1
+              Level 1 
             </button>
+            <StoreModal 
+               show={showModal}
+               onClose={handleCloseModal}
+              />
           </div>
           <div className={style.storeMainCard}>
             <div className={style.storeMainCardHeader}>
@@ -67,7 +95,7 @@ export const StoreBlock = () => {
             </div>
             <h3>Precipitation volume</h3>
             <p>1000 drops per day</p>
-            <button className={style.storeBtn}>
+            <button onClick={handleOpenStoreModalVolume} className={style.storeBtn}>
               <span>
                 <svg
                   width="8"
@@ -84,16 +112,25 @@ export const StoreBlock = () => {
               </span>
               Level 1
             </button>
+            <StoreModalVolume 
+                 show={showStoreModalVolume}
+                 onClose={handleCloseStoreModalVolume}
+            />
           </div>
         </div>
       </div>
       <div className={style.storeCards}>
-         {
-          initialStore && initialStore.map((item)=>(
-            <StoreCard lvl={item.lvl} image={item.image}  title={item.title} volume={item.volume} bonus={item.bonus}/>
-          ))
-         }
+        {initialStore &&
+          initialStore.map((item) => (
+            <StoreCard
+              lvl={item.lvl}
+              image={item.image}
+              title={item.title}
+              volume={item.volume}
+              bonus={item.bonus}
+            />
+          ))}
       </div>
-   </>
-  )
+    </>
+  );
 };
